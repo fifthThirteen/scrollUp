@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>无缝文字向上滚动</title>
+</head>
+<style type="text/css">
+  body {
+    width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  ul ,li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  ul {
+    display: block;
+  }
+  li {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+  }
+  li:hover {
+    color: red;
+  }
+  div {
+    margin: 0 auto;
+    height: 300px;
+    width: 200px;
+    overflow: hidden;
+    border: 1px solid gray;
+  }
+</style>
+<body>
+  <h2>无缝文字向上滚动</h2>
+  <div id="container">
+    <ul id="list">
+      <li>11</li>
+      <li>22</li>
+      <li>3</li>
+      <li>44</li>
+      <li>55</li>
+      <li>66</li>
+      <li>77</li>
+      <li>88</li>
+      <li>99</li>
+      <li>1010</li>
+      <li>1111</li>
+      <li>1212</li>
+      <li>1313</li>
+    </ul>
+  </div>
+  <script src="js/scroll-up.js"></script>
+<script type="text/javascript">
+    window.onload = scrollUp('container','list','li',50);
+</script>
+</body>
+</html>
+
